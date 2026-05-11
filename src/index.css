@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Inter:wght@400;500;600&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 222 33% 9%;
+    --foreground: 210 17% 97%;
+
+    --card: 222 24% 13%;
+    --card-foreground: 210 17% 97%;
+
+    --popover: 222 24% 13%;
+    --popover-foreground: 210 17% 97%;
+
+    --primary: 38 50% 58%;
+    --primary-foreground: 222 33% 9%;
+
+    --secondary: 222 24% 16%;
+    --secondary-foreground: 210 17% 97%;
+
+    --muted: 222 20% 18%;
+    --muted-foreground: 215 14% 68%;
+
+    --accent: 213 100% 75%;
+    --accent-foreground: 222 33% 9%;
+
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 222 20% 20%;
+    --input: 222 20% 18%;
+    --ring: 38 50% 58%;
+
+    --radius: 0.5rem;
+
+    --gold: 38 50% 58%;
+    --gold-soft: 38 40% 70%;
+  }
+}
+
+@layer base {
+  * { @apply border-border; }
+  html { scroll-behavior: smooth; }
+  body {
+    @apply bg-background text-foreground;
+    font-family: 'Inter', system-ui, sans-serif;
+    font-feature-settings: "ss01", "cv11";
+  }
+  h1, h2, h3, h4 {
+    font-family: 'Manrope', system-ui, sans-serif;
+    letter-spacing: -0.02em;
+  }
+}
+
+@layer utilities {
+  .container-page { @apply max-w-6xl mx-auto px-5 md:px-8; }
+  .gold-line {
+    background: linear-gradient(90deg, transparent, hsl(var(--primary) / 0.6), transparent);
+    height: 1px;
+  }
+  .hairline { border-color: hsl(var(--primary) / 0.25); }
+  .reveal { animation: reveal .7s ease-out both; }
+  @keyframes reveal {
+    from { opacity: 0; transform: translateY(14px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+  .pulse-dot {
+    animation: pulseDot 2s ease-in-out infinite;
+  }
+  @keyframes pulseDot {
+    0%, 100% { opacity: .3; transform: scale(.9); }
+    50% { opacity: 1; transform: scale(1.1); }
+  }
+}
