@@ -1,2 +1,3 @@
-# webstudio-zhile-v-moskve-4966c803
-Web Studio landing for Жилье в Москве
+# Welcome to your Lovable project
+
+TODO: Document your project here
