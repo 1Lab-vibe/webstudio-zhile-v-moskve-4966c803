@@ -1,11 +1,7 @@
 {
   "leadId": "4966c803-e7a2-4c07-875a-f2af880e4586",
   "businessName": "Жилье в Москве",
-  "city": "Москва",
-  "niche": "риелторы",
   "publicUrl": "https://webstudio.1true.ru/projects/zhile-v-moskve-4966c803/",
-  "slug": "zhile-v-moskve-4966c803",
-  "strategy": "coder_template_preview",
   "fallbackReason": "manual_top_diagnosis_coder_template_smoke",
-  "deployedAt": "2026-05-12T09:37:46.500Z"
+  "publishedToGitHubAt": "2026-05-12T09:37:49.256Z"
 }
